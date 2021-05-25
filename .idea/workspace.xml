@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="485f496e-8510-4dec-9281-f185dada0224" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/modules/monster/Monster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/game/ScreenMonster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/game/ScreenMonster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/monster/dark_giant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/monster/dark_giant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/monster/giant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/monster/giant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/monster/golem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/monster/golem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/utils.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1sgohWFwP1U9GCCKZ1gdX3dbQkg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.19310345" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MININT-0F1HT6O-local\Music\snake\res\brick" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\games\monster-cocos2d-js\src\modules\monster" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="#org.ccdt.lua.launch.CocosJSConfigurationType" factoryName="JSBinding">
+      <first key="runtime_arguments" stringValue="" />
+      <first key="force_update_entry_file" booleanValue="true" />
+      <first key="disable_live_coding" booleanValue="false" />
+      <first key="disable_using_upload" booleanValue="false" />
+      <first key="argument_map">
+        <second key="macruntime" stringValue="" />
+        <second key="win32runtime" stringValue="C:\Users\User\Documents\games\monster-cocos2d-js\simulator\win32\GameClientJS.exe" />
+        <second key="connector_id" stringValue="jsbinding.win32.attach.connector" />
+        <second key="remotePlatform" stringValue="Android" />
+        <second key="host" stringValue="127.0.0.1" />
+        <second key="androidruntime" stringValue="" />
+        <second key="iosruntime" stringValue="" />
+      </first>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="485f496e-8510-4dec-9281-f185dada0224" name="Default Changelist" comment="" />
+      <created>1621303717267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621303717267</updated>
+      <workItem from="1621303719656" duration="16017000" />
+      <workItem from="1621333338809" duration="2910000" />
+      <workItem from="1621386406630" duration="34302000" />
+      <workItem from="1621471927008" duration="23000" />
+      <workItem from="1621474551962" duration="366000" />
+      <workItem from="1621477246214" duration="11130000" />
+      <workItem from="1621652595649" duration="763000" />
+      <workItem from="1621653730837" duration="39000" />
+      <workItem from="1621673348750" duration="903000" />
+      <workItem from="1621692255142" duration="9154000" />
+      <workItem from="1621729812497" duration="7101000" />
+      <workItem from="1621739505537" duration="3493000" />
+      <workItem from="1621750797265" duration="7500000" />
+      <workItem from="1621773588988" duration="7452000" />
+      <workItem from="1621820033187" duration="154000" />
+      <workItem from="1621903920076" duration="15876000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
