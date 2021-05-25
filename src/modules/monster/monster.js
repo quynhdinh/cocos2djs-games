@@ -2,8 +2,6 @@ var Monster = cc.Sprite.extend({
     ctor: function(){
         this._super();
         this.speed = 0;
-        this.moveDown = cc.p(0, -this.speed);
-        this.moveRight = cc.p(this.speed, 0);
         this.dir = null;
         this.positionIndex = 1; // position on string DRDRDR
         this.movedDistance = 0; // the distance have moved
@@ -13,30 +11,30 @@ var Monster = cc.Sprite.extend({
 
     move: function(dt, steps){
         if(this.positionIndex == 1){
-            this.dir = (steps[0] == "D" ? this.moveDown : this.moveRight);
+            this.dir = steps[0];
         }
         if(this.getPositionX() >= cc.winSize.width || this.getPositionY() <= 0){
             this.positionIndex = 1;
             this.movedDistance = 0;
             this.setPosition(97, 570);
-            this.dir = (steps[0] == "D" ? this.moveDown : this.moveRight);
+            this.dir = steps[0];
         }
-        this.movedDistance += this.speed * dt;
 
+        this.movedDistance += this.speed * dt;
         let cellTmp = new cc.Sprite(res.CELL);
         let stepSize = cellTmp.getBoundingBox().width;
         if(this.movedDistance >= stepSize){
-            if(steps[this.positionIndex] == "D"){
-                this.dir = this.moveDown;
-            } else{
-                this.dir = this.moveRight;
-            }
+            this.dir = steps[this.positionIndex];
             this.movedDistance = 0;
             this.positionIndex++;
         }
-        this.setPosition(this.getPositionX() + this.dir.x * dt, this.getPositionY() + this.dir.y * dt );
+
+        if(this.dir == "D"){
+          this.setPositionY(this.getPositionY() - this.speed * dt);
+        } else this.setPositionX(this.getPositionX() + this.speed * dt);
+
         var front;
-        if(this.dir == this.moveDown){
+        if(this.dir == "D"){
             front = this.imageDownQueue.dequeue();
             this.setTexture(front);
             this.imageDownQueue.enqueue(front);

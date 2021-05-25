@@ -13,74 +13,50 @@ var ScreenMonster = cc.Layer.extend({
     road: null,
     cellSize: 77,
 
-    steps: "",
+    steps: "", // DRDRDR
 
 
     ctor:function() {
         this._super();
 
         this.positions = new Map(); // map (i,j) to real positions
-        this.monsters = new Map(); // map (i, j) to a Monster
         this.obstacles = new Map(); // map (i, j) to type of obstacle: 1: TREE, 2: ROCK
-        //
-        this.baddies = new Array();
+        this.monsters = new Array(); // arrays of monsters
 
-        var size = cc.director.getVisibleSize();
         var bg = new cc.Sprite(res.BG);
-        bg.setScale(size.width/bg.getContentSize().width, size.height/bg.getContentSize().height);
-        bg.setPosition(size.width/2, size.height/2);
+        bg.setScale(cc.winSize.width/bg.getContentSize().width, cc.winSize.height/bg.getContentSize().height);
+        bg.setPosition(cc.winSize.width/2, cc.winSize.height/2);
         this.addChild(bg);
-        //
-        this.layoutMap();
-        this.addRocksAndTrees();
-        cc.log(this.positions.get("0,0"));
 
+        //
+        this.drawMapTreesAndRocks();
         this.road = this.findPath(0,0);
 
-        this.screenWidth = cc.winSize.width;
-        this.screenHeight = cc.winSize.height;
-
-        this.baddies.push(new Giant());
-        this.baddies.push(new DarkGiant());
-        this.baddies.push(new Golem());
-        this.baddies[0].setPosition(this.positions.get("0,0")[0], this.positions.get("0,0")[1]);
-        this.baddies[1].setPosition(this.positions.get("0,0")[0], this.positions.get("0,0")[1]);
-        this.baddies[2].setPosition(this.positions.get("0,0")[0], this.positions.get("0,0")[1]);
-
-        this.addChild(this.baddies[0]);
-        this.addChild(this.baddies[1]);
-        this.addChild(this.baddies[2]);
+        for(var i = 0; i < 3; i++){
+            var monster;
+            if(i == 0) monster = new Giant();
+            if(i == 1) monster = new DarkGiant();
+            if(i == 2) monster = new Golem();
+            monster.setPosition(this.positions.get("0,0")[0], this.positions.get("0,0")[1])
+            this.monsters.push(monster);
+            this.addChild(monster);
+        }
 
 
-        let backButton = gv.commonButton(100, 32, this.screenWidth - 70, 20, "Back");
+        let backButton = gv.commonButton(100, 32, cc.winSize.width - 70, 20, "Back");
         this.addChild(backButton);
         backButton.addClickEventListener(this.onBackButton.bind(this));
         this.scheduleUpdate();
     },
 
-    layoutMap: function(){
-        let tmpCell = new cc.Sprite(res.CELL);
-        let width = tmpCell.getBoundingBox().width * 7;
-        let halfCellWidth = tmpCell.getBoundingBox().width / 2;
-        let diffXCell = tmpCell.getBoundingBox().width;
-        let diffYCell = tmpCell.getBoundingBox().height;
-        let startX = 135.5 - halfCellWidth;
-        let startY = cc.winSize.height - 80;
-        for(let i = 0; i < 7; i++){
-            for(let j = 0; j < 7; j++){
-                let cell = new cc.Sprite(res.CELL);
-                cell.setPosition(startX, startY);
-                this.positions.set([i,j].toString(), [startX,startY]);
-                if(startX + diffXCell + halfCellWidth >= cc.winSize.width){
-                    startY -= diffXCell;
-                    startX = 20;
-                }
-                startX += diffXCell;
-                this.addChild(cell);
-            }
+
+    update: function(dt){
+        for(let i = 0; i < 3; i++){
+            this.monsters[i].move(dt, this.steps);
         }
     },
 
+    //shortest path using BFS
     findPath: function(x, y){
         let queue = new Queue();
         let visited = new Array(7);
@@ -124,23 +100,34 @@ var ScreenMonster = cc.Layer.extend({
                 this.steps += 'D';
             } else this.steps += 'R';
         }
-        //cc.log(this.steps);
         return ans;
     },
 
-    onBackButton: function(sender){
-        fr.view(ScreenMenu);
-    },
 
-    update: function(dt){
-        this.baddies[0].move(dt, this.steps);
-        this.baddies[1].move(dt, this.steps);
-        this.baddies[2].move(dt, this.steps);
-    },
+    drawMapTreesAndRocks: function(){
+        //draw land cells
+        let tmpCell = new cc.Sprite(res.CELL);
+        let width = tmpCell.getBoundingBox().width * 7;
+        let halfCellWidth = tmpCell.getBoundingBox().width / 2;
+        let diffXCell = tmpCell.getBoundingBox().width;
+        let diffYCell = tmpCell.getBoundingBox().height;
+        let startX = 135.5 - halfCellWidth;
+        let startY = cc.winSize.height - 80;
+        for(let i = 0; i < 7; i++){
+            for(let j = 0; j < 7; j++){
+                let cell = new cc.Sprite(res.CELL);
+                cell.setPosition(startX, startY);
+                this.positions.set([i,j].toString(), [startX,startY]);
+                if(startX + diffXCell + halfCellWidth >= cc.winSize.width){
+                    startY -= diffXCell;
+                    startX = 20;
+                }
+                startX += diffXCell;
+                this.addChild(cell);
+            }
+        }
 
-
-
-    addRocksAndTrees: function(){
+        //draw obstacles, rocks and trees
         const numberOfObstacles = 7;
         let posY;
         for(let posX = 0; posX < numberOfObstacles; posX++){
@@ -161,5 +148,9 @@ var ScreenMonster = cc.Layer.extend({
             this.obstacles.set([posX, posY].toString(), obstacleType);
             this.addChild(obstacle);
         }
+    },
+
+    onBackButton: function(sender){
+        fr.view(ScreenMenu);
     },
 });

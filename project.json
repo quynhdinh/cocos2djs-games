@@ -39,8 +39,8 @@
         "src/base/Resource.js",
         "src/base/UIFactory.js",
 
-        "src/modules/monster/ScreenMonster.js",
-        "src/modules/monster/Monster.js",
+        "src/modules/ScreenMonster.js",
+        "src/modules/monster/monster.js",
         "src/modules/monster/dark_giant.js",
         "src/modules/monster/giant.js",
         "src/modules/monster/golem.js",

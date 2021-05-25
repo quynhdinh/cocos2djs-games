@@ -3,37 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="485f496e-8510-4dec-9281-f185dada0224" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/brick/ball.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/brick/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/brick/brick.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/brick/front_text.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/brick/paddle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/brick/play_btn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/snake/bg.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/snake/heand_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/snake/heand_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/snake/heand_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/snake/heand_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/snake/jindou.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/snake/loading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/snake/node.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/snake/sad_snake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/snake/snake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Resource.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/brick/ball.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/brick/brick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/brick/paddle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/game/ScreenBrick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/game/ScreenGameOver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/game/ScreenMonster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/monster/ScreenMonster.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/game/ScreenPlayGame.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/mainmenu/ScreenMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/menu/ScreenMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/monster/Monster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/monster/monster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/monster/ScreenMonster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/ScreenMonster.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/monster/dark_giant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/monster/dark_giant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/snake/Constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/snake/Snake.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/monster/giant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/monster/giant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/monster/golem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/monster/golem.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +57,7 @@
       <recent name="C:\Users\MININT-0F1HT6O-local\Music\snake\res\brick" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quynh\Documents\games\monster-cocos-2d-js\src\modules" />
       <recent name="C:\Users\quynh\Documents\games\monster-cocos-2d-js\src\modules\monster" />
       <recent name="C:\Users\User\Documents\games\monster-cocos2d-js\src\modules\monster" />
     </key>
@@ -143,7 +119,7 @@
       <workItem from="1621773588988" duration="7452000" />
       <workItem from="1621820033187" duration="154000" />
       <workItem from="1621903920076" duration="15876000" />
-      <workItem from="1621933848328" duration="907000" />
+      <workItem from="1621933848328" duration="5495000" />
     </task>
     <servers />
   </component>
