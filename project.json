@@ -38,19 +38,13 @@
         "src/base/network/InPacketFactory.js",
         "src/base/Resource.js",
         "src/base/UIFactory.js",
-        "src/modules/brick/ball.js",
-        "src/modules/brick/paddle.js",
-        "src/modules/brick/brick.js",
-        "src/modules/game/ScreenBrick.js",
-        "src/modules/game/ScreenMonster.js",
+
+        "src/modules/monster/ScreenMonster.js",
         "src/modules/monster/Monster.js",
         "src/modules/monster/dark_giant.js",
         "src/modules/monster/giant.js",
         "src/modules/monster/golem.js",
-        "src/modules/game/ScreenGameOver.js",
-        "src/modules/game/ScreenPlayGame.js",
-        "src/modules/mainmenu/ScreenMenu.js",
-        "src/modules/snake/Constants.js",
+        "src/modules/menu/ScreenMenu.js",
         "src/modules/utils.js"
     ]
 }

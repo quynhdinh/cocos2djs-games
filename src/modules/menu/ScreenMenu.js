@@ -25,11 +25,7 @@ var ScreenMenu = cc.Layer.extend({
         btnNewGame.addClickEventListener(this.onSelectNewGame.bind(this));
 
     },
-    onEnter:function(){
-        this._super();
-    },
-    onSelectNewGame:function(sender)
-    {
+    onSelectNewGame:function(sender){
         fr.view(ScreenMonster);
     },
 

@@ -7,7 +7,7 @@ var res = {
     //font
     FONT_BITMAP_NUMBER_1:"fonts/number_1.fnt",
     FONT_BITMAP_DICE_NUMBER: "fonts/diceNumber.fnt",
-    //zcsd
+
     //screen
     ZCSD_SCREEN_MENU:"zcsd/screen_menu.json",
     ZCSD_SCREEN_NETWORK:"zcsd/screen_network.json",
@@ -21,14 +21,6 @@ var res = {
     //images
     Slot1_png : "zcsd/slot1.png",
 
-    // snake
-
-    BRICK: "res/brick/brick.png",
-    BALL: "res/brick/ball.png",
-    PADDLE: "res/brick/paddle.png",
-    PLAY_BTN: "res/brick/play_btn.png",
-    BACK_GROUND: "res/brick/bg.jpg",
-    FRONT_TEXT: "res/brick/front_text.png",
 
     //MONSTER
     BG: "res/monster/map_background.png",
@@ -38,10 +30,6 @@ var res = {
     TEXT: "res/monster/text.png",
 
     //
-
-
-
-
 };
 
 var g_resources = [
@@ -95,12 +83,4 @@ var g_resources = [
     "zcsd/screen_menu.json",
     "zcsd/screen_network.json",
     "zcsd/screen_zalo.json",
-
-    // snake
-    "res/snake/heand_0.png",
-    "res/snake/heand_1.png",
-    "res/snake/heand_2.png",
-    "res/snake/heand_3.png",
-    "res/snake/node.png",
-    "res/snake/jindou.png"
 ];

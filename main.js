@@ -27,11 +27,7 @@ cc.game.onStart = function () {
 
         cc.view.setDesignResolutionSize( 650, 650, cc.ResolutionPolicy.SHOW_ALL);
 
-        // The game will be resized when browser size change
         cc.view.resizeWithBrowserSize(true);
-        //socket
-        //gv.gameClient = new GameClient();
-        //gv.poolObjects = new PoolObject();
 
         fr.view(ScreenMenu);
     }, this);

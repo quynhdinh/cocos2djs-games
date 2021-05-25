@@ -1,2 +1,2 @@
 # monster-cocos2d-js
-Monster game written in Javascript using Cocos framework
+a small project written in Javascript using Cocos framework
