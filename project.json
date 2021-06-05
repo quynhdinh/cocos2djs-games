@@ -39,12 +39,18 @@
         "src/base/Resource.js",
         "src/base/UIFactory.js",
 
-        "src/modules/ScreenMonster.js",
-        "src/modules/monster/monster.js",
-        "src/modules/monster/dark_giant.js",
-        "src/modules/monster/giant.js",
-        "src/modules/monster/golem.js",
-        "src/modules/menu/ScreenMenu.js",
-        "src/modules/utils.js"
+
+        "src/modules/GameMonster/MenuMonster.js",
+        "src/modules/GameMonster/ScreenMonster.js",
+        "src/modules/GameMonster/utils.js",
+        "src/modules/GameMonster/monster/monster.js",
+        "src/modules/GameMonster/monster/dark_giant.js",
+        "src/modules/GameMonster/monster/giant.js",
+        "src/modules/GameMonster/monster/golem.js",
+
+        "src/modules/GameBrickBreaker/MenuBrick.js",
+        "src/modules/GameBrickBreaker/ScreenBrick.js",
+        "src/modules/GameBrickBreaker/ball.js",
+        "src/modules/GameBrickBreaker/ScreenGameOver.js"
     ]
 }

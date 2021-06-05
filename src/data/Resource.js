@@ -30,6 +30,14 @@ var res = {
     TEXT: "res/monster/text.png",
 
     //
+
+
+    BRICK: "res/brick/brick.png",
+    BALL: "res/brick/ball.png",
+    PADDLE: "res/brick/paddle.png",
+    PLAY_BTN: "res/brick/play_btn.png",
+    BACK_GROUND: "res/brick/bg.jpg",
+    FRONT_TEXT: "res/brick/front_text.png",
 };
 
 var g_resources = [

@@ -23,7 +23,6 @@ function Queue(){
 function getImagesPath(queue, from, to, prefix){
     for(var i = from; i <= to; i++){
         var str = prefix + (i < 10 ? "0" : "" ) + i.toString() + ".png";
-        cc.log(str);
         queue.enqueue(str);
     }
 };

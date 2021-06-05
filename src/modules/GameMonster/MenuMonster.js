@@ -1,4 +1,5 @@
-var ScreenMenu = cc.Layer.extend({
+
+var MenuMonster = cc.Layer.extend({
     _itemMenu:null,
     _beginPos:0,
     isMouseDown:false,
@@ -20,10 +21,14 @@ var ScreenMenu = cc.Layer.extend({
 
         btnNewGame.addClickEventListener(this.onSelectNewGame.bind(this));
         this.addChild(btnNewGame);
-        var btnMore = gv.commonButton(200, 64, 3 * size.width / 4, 2 * size.height / 10 - 80, "More");
-        this.addChild(btnMore);
+        var btnBrickGame = gv.commonButton(200, 64, 3 * size.width / 4, 2 * size.height / 10 - 80, "Brick Game");
+        this.addChild(btnBrickGame);
+        btnBrickGame.addClickEventListener(this.onSelectBtnBrickGame.bind(this));
         btnNewGame.addClickEventListener(this.onSelectNewGame.bind(this));
 
+    },
+    onSelectBtnBrickGame:function(sender){
+        fr.view(MenuBrick);
     },
     onSelectNewGame:function(sender){
         fr.view(ScreenMonster);

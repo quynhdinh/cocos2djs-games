@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="485f496e-8510-4dec-9281-f185dada0224" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/modules/GameBrickBreaker/MenuBrick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/GameBrickBreaker/ScreenBrick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/GameBrickBreaker/ScreenGameOver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/GameBrickBreaker/ball.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/monster/Monster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/monster/monster.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/monster/ScreenMonster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/ScreenMonster.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/monster/dark_giant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/monster/dark_giant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/monster/giant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/monster/giant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/monster/golem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/monster/golem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Resource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/ScreenMonster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/GameMonster/ScreenMonster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/menu/ScreenMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/GameMonster/MenuMonster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/monster/dark_giant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/GameMonster/monster/dark_giant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/monster/giant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/GameMonster/monster/giant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/monster/golem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/GameMonster/monster/golem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/monster/monster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/GameMonster/monster/monster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/GameMonster/utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/modules/brick" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -54,24 +62,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quynh\Documents\games\monster-cocos-2d-js\src\modules\brick" />
+      <recent name="C:\Users\quynh\Documents\games\monster-cocos-2d-js\src\modules\game" />
       <recent name="C:\Users\MININT-0F1HT6O-local\Music\snake\res\brick" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quynh\Documents\games\monster-cocos-2d-js\src\modules" />
       <recent name="C:\Users\quynh\Documents\games\monster-cocos-2d-js\src\modules\monster" />
+      <recent name="C:\Users\quynh\Documents\games\monster-cocos-2d-js\src\modules\brick-breaker" />
+      <recent name="C:\Users\quynh\Documents\games\monster-cocos-2d-js\src\modules" />
       <recent name="C:\Users\User\Documents\games\monster-cocos2d-js\src\modules\monster" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,7 +128,9 @@
       <workItem from="1621773588988" duration="7452000" />
       <workItem from="1621820033187" duration="154000" />
       <workItem from="1621903920076" duration="15876000" />
-      <workItem from="1621933848328" duration="5495000" />
+      <workItem from="1621933848328" duration="6694000" />
+      <workItem from="1621994657958" duration="2194000" />
+      <workItem from="1622862280863" duration="5941000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 
 var gv = gv || {};
-
+var scene;
 var DESIGN_RESOLUTION_WIDTH = 1136;
 var DESIGN_RESOLUTION_HEIGHT = 640;
 cc.game.onStart = function () {
@@ -29,7 +29,9 @@ cc.game.onStart = function () {
 
         cc.view.resizeWithBrowserSize(true);
 
-        fr.view(ScreenMenu);
+        var scene = new cc.Scene();
+        scene.addChild(new MenuMonster());
+        cc.director.runScene(new cc.TransitionFade(1.2, scene));
     }, this);
 };
 

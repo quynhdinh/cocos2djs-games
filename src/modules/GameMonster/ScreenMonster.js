@@ -151,6 +151,6 @@ var ScreenMonster = cc.Layer.extend({
     },
 
     onBackButton: function(sender){
-        fr.view(ScreenMenu);
+        fr.view(MenuMonster);
     },
 });
